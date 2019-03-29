@@ -1,0 +1,224 @@
+body {
+  box-sizing: border-box;
+  padding: 3%;
+}
+
+.flex1, .flex-middle, .flex-bottom {
+  display: flex;
+  
+}
+
+.flex1>a, .flex-middle>div, .flex-bottom>div {
+  flex: 1;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  
+}
+
+.flex-middle>div {
+  width: 40%;
+}
+.flex-middle {
+  margin: 5%;
+}
+
+/* line 35: holds boxes */
+
+.box-holder {
+  /* width: 100%; */
+  margin: 10px 5%;
+  background-image: url('https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg')
+}
+
+.flex-bottom {
+  color: white;
+  font-size: 0.6rem;
+  clear:both;
+}
+
+.flex-bottom>div {
+  flex: 1 1 100px;
+  border: 1px solid green;
+}
+
+.button-div {
+  /* clear:both; */
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+  /* margin: 0 100%; */
+
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 40%;
+  /* margin: 0 auto; */
+  cursor: pointer;
+}
+
+section.flex2 {
+  margin: 10px 0;
+}
+
+nav {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 50px;
+  height: 20px;
+}
+
+.slider {
+  width: 100%;
+  height: 20%;
+  /* background-color: lightcoral; */
+  margin: 30px 0;
+}
+
+/* In Section line 15; Wrapper for img and nav */
+
+section.flex2 {
+  display: flex;
+  margin: 10px 5%;
+}
+
+.flex2>* {
+  margin: 0 5px;
+}
+
+.flex2>nav {
+  flex: 5;
+}
+
+/*  */
+
+/* SLIDER COPIED FROM W3C */
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
+  }
+}

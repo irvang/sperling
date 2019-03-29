@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sperling mock up</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- flex2 class is outer than flex1 -->
+  <section class="flex2">
+    <img class="logo"
+      src="https://at-cdn-s02.audiotool.com/2016/06/01/albums/z0MTc/cover256x256-f25f9caa69ec432a831c054de0eb139f.jpg"
+
+      alt="the logo">
+
+    <nav class='flex1'>
+      <a href="#">Nav</a>
+      <a href="#">Nav</a>
+      <a href="#">Nav</a>
+      <a href="#">Nav</a>
+      <a href="#">Nav</a>
+    </nav>
+  </section>
+
+<!-- SLIDER -->
+  <section class="slider">
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+  </section>
+
+<!-- MIDDLE SECTION -->
+  <div class="flex-middle">
+    <div>
+      <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio, natus quam doloremque iure aut exercitationem deserunt facere cumque excepturi consequatur non saepe cupiditate ullam placeat. Ipsam corporis quam laborum.</p>
+    </div>
+
+    <div>
+      <video controls width="250">
+
+        <source src="/media/examples/flower.webm" type="video/webm">
+
+        <source src="/media/examples/flower.mp4" type="video/mp4">
+
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+  </div>
+
+  <!--  BOTTOM SECTION -->
+  <section class="box-holder">
+    <div class="flex-bottom">
+
+      <div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cupiditate quibusdam distinctio tempore
+          sint
+          asperiores libero corporis odit nesciunt officiis iure, quia alias porro ratione vel culpa reprehenderit!
+          Eligendi, aliquam.</p>
+      </div>
+      <div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cupiditate quibusdam distinctio tempore
+          sint
+          asperiores libero corporis odit nesciunt officiis iure, quia alias porro ratione vel culpa reprehenderit!
+          Eligendi, aliquam.</p>
+      </div>
+      <div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cupiditate quibusdam distinctio tempore
+          sint
+          asperiores libero corporis odit nesciunt officiis iure, quia alias porro ratione vel culpa reprehenderit!
+          Eligendi, aliquam.</p>
+      </div>
+    </div>
+
+    <div class='button-div'>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <script src='js/slider.js'></script>
+</body>
+
+</html>
